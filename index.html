@@ -1,942 +1,1412 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Istiak Alam — Data Analyst (Python • SQL • Power BI)</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <head>
-        <meta charset="utf-8">
-        <title>Istiak-Alam Data Annalyst</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
+  <!-- Meta SEO -->
+  <meta name="description" content="Data Analyst specialized in Python, SQL, and Power BI. Retail & manufacturing analytics: dashboards, KPI reporting, forecasting, and A/B testing. Dhaka, Bangladesh. Open to remote.">
+  <meta name="keywords" content="Data Analyst, Python, SQL, Power BI, Dashboard, Retail Analytics, Bangladesh, Remote">
+  <link rel="canonical" href="https://istiak-alam.github.io/">
 
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Edu+TAS+Beginner:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Istiak Alam — Data Analyst">
+  <meta property="og:description" content="Python • SQL • Power BI | Retail & manufacturing analytics. Open to remote.">
+  <meta property="og:url" content="https://istiak-alam.github.io/">
+  <meta property="og:image" content="https://istiak-alam.github.io/img/header-img.jpg">
 
-        <!-- Icon Font Stylesheet -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Istiak Alam — Data Analyst">
+  <meta name="twitter:description" content="Python • SQL • Power BI | Retail & manufacturing analytics.">
+  <meta name="twitter:image" content="https://istiak-alam.github.io/img/header-img.jpg">
 
-        <!-- Libraries Stylesheet -->
-        <link rel="stylesheet" href="lib/animate/animate.min.css"/>
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Edu+TAS+Beginner:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+  <!-- Icon Font Stylesheet -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Libraries Stylesheet -->
+  <link rel="stylesheet" href="lib/animate/animate.min.css"/>
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <body>
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
 
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
+  <!-- Spinner Start -->
+  <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" style="width:3rem;height:3rem;" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+  <!-- Spinner End -->
+
+  <!-- Navbar Start -->
+  <div class="container-fluid nav-section border-0">
+    <nav class="navbar navbar-light">
+      <div class="navbar-nav flex-column">
+        <a href="#pigraHome" class="nav-item nav-link active"><span class="fa fa-home"></span> Home</a>
+        <a href="#pigraAbout" class="nav-item nav-link"><span class="far fa-address-card"></span> About</a>
+        <a href="#pigraService" class="nav-item nav-link"><span class="fab fa-servicestack"></span> Services</a>
+        <a href="#pigraPortfolio" class="nav-item nav-link"><span class="fa fa-briefcase"></span> Portfolio</a>
+        <a href="#certifications" class="nav-item nav-link"><span class="fa fa-certificate"></span> Certifications</a>
+        <a href="#pigraContact" class="nav-item nav-link"><span class="fas fa-address-book"></span> Contact</a>
+      </div>
+    </nav>
+  </div>
+  <!-- Navbar End -->
+
+  <!-- Header Start -->
+  <div class="container-fluid" id="pigraHome">
+    <div class="container">
+      <div class="row g-0">
+        <div class="col-12 col-lg-3">
+          <div class="header-content bg-dark h-100 pt-6 pe-6 pb-6">
+            <a href="index.html" class="navbar-brand d-inline-flex pb-5 wow fadeInUp" data-wow-delay="0.1s">
+              <h1 class="display-6 text-white mb-0">Welcome</h1>
+            </a>
+            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.3s">
+              <p class="text-white sub-title">👋 Hello, I'm Istiak Alam</p>
+              <h1 class="display-6 text-white mb-0">Junior Data Analyst at Panjabiwala Limited</h1>
             </div>
+          </div>
         </div>
-        <!-- Spinner End -->
-
-
-        <!-- Navbar Start -->
-        <div class="container-fluid nav-section border-0">
-            <nav class="navbar navbar-light">
-                <div class="navbar-nav flex-column">
-                    <a href="#pigraHome" class="nav-item nav-link active"><span class="fa fa-home"></span> Home</a>
-                    <a href="#pigraAbout" class="nav-item nav-link"><span class="far fa-address-card"></span> About</a>
-                    <a href="#pigraService" class="nav-item nav-link"><span class="fab fa-servicestack"></span> Service</a>
-                    <a href="#pigraBlog" class="nav-item nav-link"><span class="fa fa-blog"></span> Blog</a>
-                    <a href="#pigraContact" class="nav-item nav-link"><span class="fas fa-address-book"></span> Contact</a>
+        <div class="col-12 col-lg-9">
+          <div class="header-img d-flex h-100 pt-6 ps-6 pb-6">
+            <div class="row g-5">
+              <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="bg-light p-4" style="border-radius:68% 32% 100% 0% / 0% 75% 25% 100%;">
+                  <img src="img/header-img.jpg" class="img-fluid w-100" style="border-radius:68% 32% 100% 0% / 0% 75% 25% 100%;" alt="Istiak Alam portrait">
                 </div>
-            </nav>
+              </div>
+              <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.3s">
+                <h1 class="display-6 mb-4">Junior Data Analyst</h1>
+                <p class="mb-4">I am a Junior Data Analyst at Panjabiwala Limited, specializing in business intelligence solutions and data analytics.</p>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                  <p class="text-dark mb-0">Dhaka, Bangladesh</p>
+                </div>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="fas fa-envelope text-primary me-3"></i>
+                  <p class="text-dark mb-0"><a href="mailto:istiak36@gmail.com" class="text-body">istiak36@gmail.com</a></p>
+                </div>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="fa fa-phone-alt text-primary me-3"></i>
+                  <p class="text-dark mb-0"><a href="tel:+8801720825371" class="text-body">(+880) 1720 825 371</a></p>
+                </div>
+                <div class="d-flex align-items-center mb-4">
+                  <i class="fab fa-firefox-browser text-primary me-3"></i>
+                  <p class="text-dark mb-0"><a href="https://istiak-alam.github.io/" class="text-body" target="_blank" rel="noopener">istiak-alam.github.io</a></p>
+                </div>
+                <div class="d-flex">
+                  <a class="btn btn-primary btn-sm-square me-3" href="https://www.facebook.com/IstiakShetu" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f text-white"></i></a>
+                  <a class="btn btn-primary btn-sm-square me-0" href="https://www.linkedin.com/in/istiak-data-analyst" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in text-white"></i></a>
+                </div>
+              </div>
+            </div><!-- /.row -->
+          </div>
         </div>
-        <!-- Navbar End -->
+      </div>
+    </div>
+  </div>
+  <!-- Header End -->
 
-        <!-- Header Start -->
-        <div class="container-fluid" id="pigraHome">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-12 col-lg-3">
-                        <div class="header-content bg-dark h-100 pt-6 pe-6 pb-6">
-                            <a href="index.html" class="navbar-brand d-inline-flex pb-5 wow fadeInUp" data-wow-delay="0.1s">
-                                <h1 class="display-6 text-white mb-0">Pigra</h1>
-                            </a>
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.3s">
-                                <p class="text-white sub-title">👋 Hello I'm Mezbah</p>
-                                <h1 class="display-6 text-white mb-0">Creative Designer Based in USA</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-9">
-                        <div class="header-img d-flex h-100 pt-6 ps-6 pb-6">
-                            <div class="row g-5">
-                                <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.1s">
-                                    <div class="bg-light p-4" style="border-radius: 68% 32% 100% 0% / 0% 75% 25% 100%;">
-                                        <img src="img/header-img.jpg" class="img-fluid w-100" style="border-radius: 68% 32% 100% 0% / 0% 75% 25% 100%;" alt="Image">
-                                    </div>
-                                </div>
-                                <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.3s">
-                                    <h1 class="display-6 mb-4">Junior UI/UX Designer Developer</h1>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sed animi et laboriosam facere tempora rerum, eligendi veritatis nesciunt cum?
-                                    </p>
-                                    <div class="d-flex align-items-center mb-2">
-                                        <i class="fas fa-map-marker-alt text-primary me-3"></i>
-                                        <p class="text-dark mb-0">123 Street New York.USA</p>
-                                    </div>
-                                    <div class="d-flex align-items-center mb-2">
-                                        <i class="fas fa-envelope text-primary me-3"></i>
-                                        <p class="text-dark mb-0">info@example.com</p>
-                                    </div>
-                                    <div class="d-flex align-items-center mb-2">
-                                        <i class="fa fa-phone-alt text-primary me-3"></i>
-                                        <p class="text-dark mb-0">(+012) 3456 7890</p>
-                                    </div>
-                                    <div class="d-flex align-items-center mb-4">
-                                        <i class="fab fa-firefox-browser text-primary me-3"></i>
-                                        <p class="text-dark mb-0">Yoursite@ex.com</p>
-                                    </div>
-                                    <div class="d-flex">
-                                        <a class="btn btn-primary btn-sm-square me-3" href="#"><i class="fab fa-facebook-f text-white"></i></a>
-                                        <a class="btn btn-primary btn-sm-square me-3" href="#"><i class="fab fa-twitter text-white"></i></a>
-                                        <a class="btn btn-primary btn-sm-square me-3" href="#"><i class="fab fa-instagram text-white"></i></a>
-                                        <a class="btn btn-primary btn-sm-square me-0" href="#"><i class="fab fa-linkedin-in text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <!-- About Start -->
+  <div class="container-fluid" id="pigraAbout">
+    <div class="container">
+      <div class="row g-0">
+        <div class="col-12 col-lg-3">
+          <div class="about-header bg-dark h-100 pt-6 pe-6 pb-6">
+            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+              <p class="text-white sub-title">About Me</p>
+              <h1 class="display-6 text-white mb-0">Junior Data Analyst at Panjabiwala Limited, based in Dhaka, Bangladesh, since October 2024.</h1>
             </div>
+          </div>
         </div>
-        <!-- Header End -->
-
-
-        <!-- About Start -->
-        <div class="container-fluid" id="pigraAbout">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-12 col-lg-3">
-                        <div class="about-header bg-dark h-100 pt-6 pe-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">About Me</p>
-                                <h1 class="display-6 text-white mb-0">UI Designer based in NYC, USA since 2025</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-9">
-                        <div class="about-content h-100 pt-6 ps-6 pb-6">
-                            <div class="row g-5">
-                                <div class="col-xl-5">
-                                    <div class="about-img bg-light p-4 wow fadeInUp" data-wow-delay="0.1s">
-                                        <img src="img/about.jpg" class="img-fluid w-100" alt="Image">
-                                        <div class="sosial-icon">
-                                            <a class="btn btn-primary btn-sm-square mb-3" href="#"><i class="fab fa-facebook-f text-white"></i></a>
-                                            <a class="btn btn-primary btn-sm-square mb-3" href="#"><i class="fab fa-twitter text-white"></i></a>
-                                            <a class="btn btn-primary btn-sm-square mb-3" href="#"><i class="fab fa-instagram text-white"></i></a>
-                                            <a class="btn btn-primary btn-sm-square mb-0" href="#"><i class="fab fa-linkedin-in text-white"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-7 wow fadeInUp" data-wow-delay="0.3s">
-                                    <h4 class="mb-4">Hello, I'm Mezbah, Based in USA</h4>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam repellat, sint magni incidunt voluptatum eveniet numquam vel facilis sit similique a mollitia et dolorum aperiam repellendus ipsum, quidem nemo eligendi!
-                                    </p>
-                                    <div class="row g-4 mb-4">
-                                        <div class="col-6">
-                                            <p><strong class="fw-bold text-dark">Phone :</strong> + 113-804-9098</p>
-                                            <p><strong class="fw-bold text-dark">skype :</strong> mezbah.wallas</p>
-                                            <p class="mb-0"><strong class="fw-bold text-dark">Address :</strong> 123 Street New York</p>
-                                        </div>
-                                        <div class="col-6">
-                                            <p><strong class="fw-bold text-dark">Nationality :</strong> New York, USA</p>
-                                            <p><strong class="fw-bold text-dark">Email :</strong> contact@mezbah.com</p>
-                                            <p class="mb-0"><strong class="fw-bold text-dark">Freelancer :</strong> Available</p>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="btn btn-primary py-2 px-4"> <i class="fas fa-download me-2"></i>Download My CV</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="col-12 col-lg-9">
+          <div class="about-content h-100 pt-6 ps-6 pb-6">
+            <div class="row g-5">
+              <div class="col-xl-5">
+                <div class="about-img bg-light p-4 wow fadeInUp" data-wow-delay="0.1s">
+                  <img src="img/about.jpg" class="img-fluid w-100" alt="Istiak working" loading="lazy">
+                  <div class="sosial-icon mt-3">
+                    <a class="btn btn-primary btn-sm-square mb-3" href="https://www.facebook.com/IstiakShetu" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f text-white"></i></a>
+                    <a class="btn btn-primary btn-sm-square mb-0" href="https://www.linkedin.com/in/istiak-data-analyst" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in text-white"></i></a>
+                  </div>
                 </div>
-            </div>
-        </div>
-        <!-- About End -->
-
-
-        <!-- Education Start -->
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-lg-3">
-                        <div class="education-header bg-dark h-100 pt-6 pe-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">Education</p>
-                                <h1 class="display-6 text-white mb-0">My education qualification</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="education-content h-100 pt-6 ps-6 pb-6">
-                            <div class="row g-4">
-                                <div class="col-12">
-                                    <div class="education-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
-                                        <div class="d-flex align-items-center mb-3">
-                                            <p class="fs-5 mb-0 me-4">National University</p>
-                                            <div>
-                                                <span class="fa fa-calendar me-1"></span> 2017 - 2019
-                                            </div>
-                                        </div>
-                                        <h4 class="mb-3">Diploma in Computer</h4>
-                                        <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, a quasi velit sint atque non saepe quaerat ducimus, nobis error cupiditate, nisi repudiandae dignissimos magnam? Dicta ab possimus tempora nobis.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="education-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
-                                        <div class="d-flex align-items-center mb-3">
-                                            <p class="fs-5 mb-0 me-4">Webster College</p>
-                                            <div>
-                                                <span class="fa fa-calendar me-1"></span> 2017 - 2019
-                                            </div>
-                                        </div>
-                                        <h4 class="mb-3">UI/UX Design</h4>
-                                        <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, a quasi velit sint atque non saepe quaerat ducimus, nobis error cupiditate, nisi repudiandae dignissimos magnam? Dicta ab possimus tempora nobis.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="education-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.5s">
-                                        <div class="d-flex align-items-center mb-3">
-                                            <p class="fs-5 mb-0 me-4">Oxford University</p>
-                                            <div>
-                                                <span class="fa fa-calendar me-1"></span> 2017 - 2019
-                                            </div>
-                                        </div>
-                                        <h4 class="mb-3">Java Development</h4>
-                                        <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, a quasi velit sint atque non saepe quaerat ducimus, nobis error cupiditate, nisi repudiandae dignissimos magnam? Dicta ab possimus tempora nobis.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="col-xl-7 wow fadeInUp" data-wow-delay="0.3s">
+                <h4 class="mb-4">Hello, I'm Istiak Alam — Open to Work (Remote)</h4>
+                <p class="mb-4">With over 13 years of experience in IT systems, I now specialize in Data Analytics using Python, SQL, and Power BI.</p>
+                <div class="row g-4 mb-4">
+                  <div class="col-6">
+                    <p><i class="fa fa-phone-alt me-2 text-primary"></i> (+880) 1720 825 371</p>
+                    <p><i class="fab fa-linkedin-in me-2 text-primary"></i> <a href="https://www.linkedin.com/in/istiak-data-analyst" target="_blank" rel="noopener">linkedin.com/in/istiak-data-analyst</a></p>
+                    <p class="mb-0"><i class="fa fa-map-marker-alt me-2 text-primary"></i> Dhaka, Bangladesh</p>
+                  </div>
+                  <div class="col-6">
+                    <p><strong>Nationality:</strong> Bangladeshi</p>
+                    <p><strong>Email:</strong> <a href="mailto:istiak36@gmail.com">istiak36@gmail.com</a></p>
+                    <p class="mb-0"><strong>Freelancer:</strong> Available</p>
+                  </div>
                 </div>
-            </div>
+                <a href="/resume/Istiak-Alam-Data-Analyst.pdf" class="btn btn-primary py-2 px-4" target="_blank" rel="noopener">
+                  <i class="fas fa-download me-2"></i>Download My CV
+                </a>
+              </div>
+            </div><!-- /.row -->
+          </div>
         </div>
-        <!-- Education End -->
+      </div>
+    </div>
+  </div>
+  <!-- About End -->
 
-        <!-- Experience Start -->
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-lg-3">
-                        <div class="experience-header bg-dark h-100 pt-6 pe-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">Experience</p>
-                                <h1 class="display-6 text-white mb-0">My real work experience</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="experience-content h-100 pt-6 ps-6 pb-6">
-                            <div class="row g-4">
-                                <div class="col-12">
-                                    <div class="experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
-                                        <div class="d-flex align-items-center mb-3">
-                                            <p class="fs-5 mb-0 me-4">Historian</p>
-                                            <div>
-                                                <span class="fa fa-calendar me-1"></span> 2017 - 2019
-                                            </div>
-                                        </div>
-                                        <h4 class="mb-3">Seinor UI/UX Desinger</h4>
-                                        <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, a quasi velit sint atque non saepe quaerat ducimus, nobis error cupiditate, nisi repudiandae dignissimos magnam? Dicta ab possimus tempora nobis.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
-                                        <div class="d-flex align-items-center mb-3">
-                                            <p class="fs-5 mb-0 me-4">Historian</p>
-                                            <div>
-                                                <span class="fa fa-calendar me-1"></span> 2017 - 2019
-                                            </div>
-                                        </div>
-                                        <h4 class="mb-3">UI/UX Designer</h4>
-                                        <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, a quasi velit sint atque non saepe quaerat ducimus, nobis error cupiditate, nisi repudiandae dignissimos magnam? Dicta ab possimus tempora nobis.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.5s">
-                                        <div class="d-flex align-items-center mb-3">
-                                            <p class="fs-5 mb-0 me-4">Historian</p>
-                                            <div>
-                                                <span class="fa fa-calendar me-1"></span> 2017 - 2019
-                                            </div>
-                                        </div>
-                                        <h4 class="mb-3">Junior Visual Designer</h4>
-                                        <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, a quasi velit sint atque non saepe quaerat ducimus, nobis error cupiditate, nisi repudiandae dignissimos magnam? Dicta ab possimus tempora nobis.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+  <!-- Education Start -->
+  <div class="container-fluid" id="education">
+    <div class="container">
+      <div class="row g-0">
+        <div class="col-lg-3">
+          <div class="education-header bg-dark h-100 pt-6 pe-6 pb-6">
+            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+              <p class="text-white sub-title">Education</p>
+              <h1 class="display-6 text-white mb-0">My education qualification</h1>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="education-content h-100 pt-6 ps-6 pb-6">
+            <div class="row g-4">
+              <!-- Green University of Bangladesh -->
+              <div class="col-12">
+                <div class="education-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
+                  <div class="d-flex align-items-center mb-3">
+                    <p class="fs-5 mb-0 me-4">Green University of Bangladesh</p>
+                    <div><span class="fa fa-calendar me-1"></span> B.Sc. in CSE</div>
+                  </div>
+                  <h4 class="mb-3">Bachelor of Science in Computer Science & Engineering</h4>
+                  <p class="mb-0">
+                    I am pursuing my B.Sc. in Computer Science and Engineering at Green University of Bangladesh.
+                    The program provides foundations in algorithms, data structures, databases, software engineering,
+                    artificial intelligence, and data analytics. Hands-on projects and practical coursework strengthen
+                    both technical skills and problem-solving abilities.
+                  </p>
                 </div>
-            </div>
+              </div>
+
+            </div><!-- /.row -->
+          </div>
         </div>
-        <!-- Exparience End -->
+      </div>
+    </div>
+  </div>
+  <!-- Education End -->
 
-
-        <!-- Skills Start -->
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-lg-3">
-                        <div class="skills-header h-100 bg-dark pt-6 pe-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">Skills</p>
-                                <h1 class="display-6 text-white mb-0">My expertise skills</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="skills-content h-100 pt-6 ps-6 pb-6">
-                            <div class="row g-4">
-                                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                    <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
-                                        <div class="text-primary text-center mb-3"><span class="fab fa-wordpress fa-3x"></span></div>
-                                        <div class="counter-counting d-flex justify-content-center">
-                                            <h4 class="display-6" data-toggle="counter-up">98</h4>
-                                            <h4 class="display-6">%</h4>
-                                        </div>
-                                        <p class="mb-0">WordPress</p>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                    <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
-                                        <div class="text-primary text-center mb-3"><span class="fab fa-figma fa-3x"></span></div>
-                                        <div class="counter-counting d-flex justify-content-center">
-                                            <h4 class="display-6" data-toggle="counter-up">95</h4>
-                                            <h4 class="display-6">%</h4>
-                                        </div>
-                                        <p class="mb-0">Figma</p>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                    <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.5s">
-                                        <div class="text-primary text-center mb-3"><span class="fab fa-sketch fa-3x"></span></div>
-                                        <div class="counter-counting d-flex justify-content-center">
-                                            <h4 class="display-6" data-toggle="counter-up">87</h4>
-                                            <h4 class="display-6">%</h4>
-                                        </div>
-                                        <p class="mb-0">Sketch</p>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                    <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.7s">
-                                        <div class="text-primary text-center mb-3"><span class="fab fa-elementor fa-3x"></span></div>
-                                        <div class="counter-counting d-flex justify-content-center">
-                                            <h4 class="display-6" data-toggle="counter-up">75</h4>
-                                            <h4 class="display-6">%</h4>
-                                        </div>
-                                        <p class="mb-0">Elementor</p>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                    <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
-                                        <div class="text-primary text-center mb-3"><span class="fab fa-js-square fa-3x"></span></div>
-                                        <div class="counter-counting d-flex justify-content-center">
-                                            <h4 class="display-6" data-toggle="counter-up">67</h4>
-                                            <h4 class="display-6">%</h4>
-                                        </div>
-                                        <p class="mb-0">JavaScript</p>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                    <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
-                                        <div class="text-primary text-center mb-3"><span class="fab fa-html5 fa-3x"></span></div>
-                                        <div class="counter-counting d-flex justify-content-center">
-                                            <h4 class="display-6" data-toggle="counter-up">98</h4>
-                                            <h4 class="display-6">%</h4>
-                                        </div>
-                                        <p class="mb-0">HTML & CSS</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+  <!-- Experience Start -->
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row g-0">
+        <div class="col-lg-3">
+          <div class="experience-header bg-dark h-100 pt-6 pe-6 pb-6">
+            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+              <p class="text-white sub-title">Experience</p>
+              <h1 class="display-6 text-white mb-0">My real work experience</h1>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="experience-content h-100 pt-6 ps-6 pb-6">
+            <div class="row g-4">
+              <!-- Panjabiwala Limited — Junior Data Analyst -->
+              <div class="col-12">
+                <div class="experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
+                  <div class="d-flex align-items-center mb-3">
+                    <p class="fs-5 mb-0 me-4">Panjabiwala Limited • Dhaka</p>
+                    <div><span class="fa fa-calendar me-1"></span> Oct 2024 – Present</div>
+                  </div>
+                  <h4 class="mb-3">Junior Data Analyst</h4>
+                  <p class="mb-0">
+                    Building retail analytics with <strong>SQL</strong>, <strong>Python</strong>, and <strong>Power BI</strong>—sales & inventory dashboards,
+                    automated KPI reporting, and ad-hoc analyses for merchandising and finance. Improved data quality with
+                    validation rules and source-to-target checks. Worked on capstone projects to upgrade ML and BI skills.
+                  </p>
                 </div>
-            </div>
-        </div>
-        <!-- Skills End -->
+              </div>
 
-
-        <!-- Service Start -->
-        <div class="container-fluid" id="pigraService">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-lg-3">
-                        <div class="service-header h-100 bg-dark pt-6 pe-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">My Services</p>
-                                <h1 class="display-6 text-white mb-0">What I do for you</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="service-content h-100 pt-6 ps-6 pb-6">
-                            <div class="row g-4">
-                                <div class="col-12">
-                                    <div class="service-item p-4 wow fadeInUp" data-wow-delay="0.1s">
-                                        <div class="row g-4 align-items-center">
-                                            <div class="col-xl-2">
-                                                <i class="fas fa-bezier-curve fa-3x"></i>
-                                            </div>
-                                            <div class="col-xl-3">
-                                                <a href="#" class="h4 mb-0">Creative Design</a>
-                                            </div>
-                                            <div class="col-xl-4">
-                                                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laboriosam repudiandae
-                                                </p>
-                                            </div>
-                                            <div class="col-xl-3">
-                                                <p><i class="fa fa-check me-2"></i> UI/UX Design</p>
-                                                <p><i class="fa fa-check me-2"></i> Research</p>
-                                                <p class="mb-0"><i class="fa fa-check me-2"></i> Mobile App</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="service-item p-4 wow fadeInUp" data-wow-delay="0.3s">
-                                        <div class="row g-4 align-items-center">
-                                            <div class="col-xl-2">
-                                                <i class="fas fa-laptop-code fa-3x"></i>
-                                            </div>
-                                            <div class="col-xl-3">
-                                                <a href="#" class="h4 mb-0">Web Developm</a>
-                                            </div>
-                                            <div class="col-xl-4">
-                                                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laboriosam repudiandae
-                                                </p>
-                                            </div>
-                                            <div class="col-xl-3">
-                                                <p><i class="fa fa-check me-2"></i> UI/UX Design</p>
-                                                <p><i class="fa fa-check me-2"></i> Research</p>
-                                                <p class="mb-0"><i class="fa fa-check me-2"></i> Mobile App</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="service-item p-4 wow fadeInUp" data-wow-delay="0.5s">
-                                        <div class="row g-4 align-items-center">
-                                            <div class="col-xl-2">
-                                                <i class="fab fa-app-store fa-3x"></i>
-                                            </div>
-                                            <div class="col-xl-3">
-                                                <a href="#" class="h4 mb-0">Mobile Application</a>
-                                            </div>
-                                            <div class="col-xl-4">
-                                                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laboriosam repudiandae
-                                                </p>
-                                            </div>
-                                            <div class="col-xl-3">
-                                                <p><i class="fa fa-check me-2"></i> UI/UX Design</p>
-                                                <p><i class="fa fa-check me-2"></i> Research</p>
-                                                <p class="mb-0"><i class="fa fa-check me-2"></i> Mobile App</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              <!-- NABIL IT — Information Technology Administrator -->
+              <div class="col-12">
+                <div class="experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.2s">
+                  <div class="d-flex align-items-center mb-3">
+                    <p class="fs-5 mb-0 me-4">NABIL IT • Dhaka</p>
+                    <div><span class="fa fa-calendar me-1"></span> Nov 2019 – Aug 2024</div>
+                  </div>
+                  <h4 class="mb-3">Information Technology Administrator</h4>
+                  <p class="mb-0">
+                    Administered infrastructure: <strong>Windows Server/AD</strong>, endpoint management, backups (NAS/cloud), and network (LAN/WAN, Wi-Fi, firewall).
+                    Owned Tier-2/3 support, vendor coordination, and IT documentation. Aided ERP/database maintenance and produced
+                    operational reports for leadership.
+                  </p>
                 </div>
-            </div>
-        </div>
-        <!-- Service End -->
+              </div>
 
-
-        <!-- Portfolio Start -->
-        <div class="container-fluid" id="pigraBlog">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-lg-3">
-                        <div class="portfolio-header h-100 bg-dark pt-6 pe-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">Portfolio</p>
-                                <h1 class="display-6 text-white mb-0">My Recent Works</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="portfolio-content h-100 pt-6 ps-6 pb-6">
-                            <div class="portfolio-item py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                                <div class="row g-4 align-items-center">
-                                    <div class="col-xl-6">
-                                        <h4 class="text-body">Web Design</h4>
-                                        <h1 class="display-6 mb-0">Software Design for ABC Corporation</h1>
-                                    </div>
-                                    <div class="col-9 col-xl-4">
-                                        <div class="portfolio-img">
-                                            <div class="portfolio-img-inner">
-                                                <img src="img/Portfolio-1.jpg" class="img-fluid" alt="Image">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-3 col-xl-2">
-                                        <div class="view-img">
-                                            <a href="img/Portfolio-1.jpg" class="btn btn-primary btn-lg-square"  data-lightbox="Portfolio-1"><i class="fas fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio-item py-5 border-bottom wow fadeInUp" data-wow-delay="0.3s">
-                                <div class="row g-4 align-items-center">
-                                    <div class="col-xl-6">
-                                        <h4 class="text-body">Web Development</h4>
-                                        <h1 class="display-6 mb-0">Website Development for ABC Corporation</h1>
-                                    </div>
-                                    <div class="col-9 col-xl-4">
-                                        <div class="portfolio-img">
-                                            <div class="portfolio-img-inner">
-                                                <img src="img/portfolio-2.jpg" class="img-fluid" alt="Image">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-3 col-xl-2">
-                                        <div class="view-img">
-                                            <a href="img/portfolio-2.jpg" class="btn btn-primary btn-lg-square"  data-lightbox="portfolio-2"><i class="fas fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio-item py-5 wow fadeInUp" data-wow-delay="0.5s">
-                                <div class="row g-4 align-items-center">
-                                    <div class="col-xl-6">
-                                        <h4 class="text-body">Photography</h4>
-                                        <h1 class="display-6 mb-0">Security Analysis for ABC Corporation</h1>
-                                    </div>
-                                    <div class="col-9 col-xl-4">
-                                        <div class="portfolio-img">
-                                            <div class="portfolio-img-inner">
-                                                <img src="img/portfolio-3.jpg" class="img-fluid" alt="Image">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-3 col-xl-2">
-                                        <div class="view-img">
-                                            <a href="img/portfolio-3.jpg" class="btn btn-primary btn-lg-square"  data-lightbox="portfolio-3"><i class="fas fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              <!-- Omega Home Solution — Senior IT Executive -->
+              <div class="col-12">
+                <div class="experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
+                  <div class="d-flex align-items-center mb-3">
+                    <p class="fs-5 mb-0 me-4">Omega Home Solution • Dhaka</p>
+                    <div><span class="fa fa-calendar me-1"></span> Apr 2018 – Oct 2019</div>
+                  </div>
+                  <h4 class="mb-3">Senior IT Executive</h4>
+                  <p class="mb-0">
+                    Furniture manufacturing & retail: supported POS/showrooms and factory IT, maintained networks/CCTV,
+                    implemented backup routines, and trained staff. Managed hardware lifecycle to reduce downtime.
+                  </p>
                 </div>
-            </div>
-        </div>
-        <!-- Portfolio End -->
+              </div>
 
-
-        <!-- Blog Start -->
-        <div class="container-fluid" >
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-lg-3">
-                        <div class="blog-header h-100 bg-dark pt-6 pe-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">Blog</p>
-                                <h1 class="display-6 text-white mb-0">Recent Posts</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="blog-content h-100 pt-6 ps-6 pb-6">
-                            <div class="row g-4">
-                                <div class="col-xl-6">
-                                    <div class="blog-item wow fadeInUp" data-wow-delay="0.1s">
-                                        <div class="row g-4">
-                                            <div class="col-4">
-                                                <div class="blog-item-img bg-dark h-100">
-                                                    <a href="#">
-                                                        <img src="img/blog-1.jpg" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="Image">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="h-100">
-                                                    <p class="text-body mb-3"><i class="fa fa-calendar-alt me-2"></i> November 12, 2024</p>
-                                                    <a href="#" class="d-inline-block h4 mb-4">Secrets of the Mobile Application</a>
-                                                    <div class="py-2 px-3 bg-light d-flex justify-content-between">
-                                                        <p class="mb-0 text-body">By <a href="#" class="h6">Bernard</a></p>
-                                                        <p class="mb-0 text-body">In <a href="#" class="h6">Design</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="blog-item wow fadeInUp" data-wow-delay="0.3s">
-                                        <div class="row g-4">
-                                            <div class="col-4">
-                                                <div class="blog-item-img bg-dark h-100">
-                                                    <a href="#">
-                                                        <img src="img/blog-2.jpg" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="Image">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="h-100">
-                                                    <p class="text-body mb-3"><i class="fa fa-calendar-alt me-2"></i> November 18, 2024</p>
-                                                    <a href="#" class="d-inline-block h4 mb-4">How to Create Quality Figma Design</a>
-                                                    <div class="py-2 px-3 bg-light d-flex justify-content-between">
-                                                        <p class="mb-0 text-body">By <a href="#" class="h6">Walker</a></p>
-                                                        <p class="mb-0 text-body">In <a href="#" class="h6">Media</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="blog-item wow fadeInUp" data-wow-delay="0.5s">
-                                        <div class="row g-4">
-                                            <div class="col-4">
-                                                <div class="blog-item-img bg-dark h-100">
-                                                    <a href="#">
-                                                        <img src="img/blog-3.jpg" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="Image">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="h-100">
-                                                    <p class="text-body mb-3"><i class="fa fa-calendar-alt me-2"></i> November 23, 2025</p>
-                                                    <a href="#" class="d-inline-block h4 mb-4">Tutorials for Learning Development</a>
-                                                    <div class="py-2 px-3 bg-light d-flex justify-content-between">
-                                                        <p class="mb-0 text-body">By <a href="#" class="h6">Jacob</a></p>
-                                                        <p class="mb-0 text-body">In <a href="#" class="h6">Lifestyle</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="blog-item wow fadeInUp" data-wow-delay="0.7s">
-                                        <div class="row g-4">
-                                            <div class="col-4">
-                                                <div class="blog-item-img bg-dark h-100">
-                                                    <a href="#">
-                                                        <img src="img/blog-4.jpg" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="Image">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="h-100">
-                                                    <p class="text-body mb-3"><i class="fa fa-calendar-alt me-2"></i> November 26, 2025</p>
-                                                    <a href="#" class="d-inline-block h4 mb-4">Tutorials for Learning Development</a>
-                                                    <div class="py-2 px-3 bg-light d-flex justify-content-between">
-                                                        <p class="mb-0 text-body">By <a href="#" class="h6">Perkel</a></p>
-                                                        <p class="mb-0 text-body">In <a href="#" class="h6">Design</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 wow fadeInUp" data-wow-delay="0.9s">
-                                    <div class="blog-btn d-flex justify-content-center">
-                                        <p class="mb-0 me-2">For More Works Visit</p>
-                                        <a href="#" class="btn d-inline-block p-0">Our Blog</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              <!-- HATIL — Senior IT Officer -->
+              <div class="col-12">
+                <div class="experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.4s">
+                  <div class="d-flex align-items-center mb-3">
+                    <p class="fs-5 mb-0 me-4">HATIL FURNITURE LTD. • Dhaka</p>
+                    <div><span class="fa fa-calendar me-1"></span> Dec 2016 – Mar 2018</div>
+                  </div>
+                  <h4 class="mb-3">Senior IT Officer</h4>
+                  <p class="mb-0">
+                    Led day-to-day IT across head office and outlets. Standardized endpoint builds, improved network stability,
+                    and introduced routine monitoring for servers and key apps. Prioritized service requests with business teams.
+                  </p>
                 </div>
-            </div>
-        </div>
-        <!-- Blog End -->
+              </div>
 
-
-        <!-- Testimonial Start -->
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-lg-3">
-                        <div class="testimonial-header h-100 bg-dark pt-6 pe-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">Testimonial</p>
-                                <h1 class="display-6 text-white mb-0">What People Say</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="testimonial-content h-100 pt-6 ps-6 pb-6">
-                            <div class="testimonial-carousel owl-carousel bg-light wow fadeInUp" data-wow-delay="0.1s">
-                                <div class="testimonial-item" data-dot="<img class='img-fluid' src='img/testimonial-img-1.jpg' alt=''>">
-                                    <div class="row gy-4 gx-2 mb-4">
-                                        <div class="col-sm-6">
-                                            <div class="d-flex justify-content-sm-end">
-                                                <div class="testimonial-inner-img border border-primary border-3 me-4" style="width: 100px; height: 100px;">
-                                                    <img src="img/testimonial-img-1.jpg" class="img-fluid" style="object-fit: cover;" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div>
-                                                <h5 class="mb-2">John Abraham</h5>
-                                                <p class="mb-0">New York, USA</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-sm-center">
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores nemo facilis tempora esse explicabo sed! Dignissimos quia ullam pariatur blanditiis sed voluptatum. Totam aut quidem laudantium tempora. Minima, saepe earum!
-                                        </p>
-                                        <div class="d-flex justify-content-sm-center">
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="testimonial-item" data-dot="<img class='img-fluid' src='img/testimonial-img-2.jpg' alt=''>">
-                                    <div class="row gy-4 gx-2 mb-4">
-                                        <div class="col-sm-6">
-                                            <div class="d-flex justify-content-sm-end">
-                                                <div class="testimonial-inner-img border border-primary border-3 me-4" style="width: 100px; height: 100px;">
-                                                    <img src="img/testimonial-img-2.jpg" class="img-fluid" style="object-fit: cover;" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div>
-                                                <h5 class="mb-2">John Abraham</h5>
-                                                <p class="mb-0">New York, USA</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-sm-center">
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores nemo facilis tempora esse explicabo sed! Dignissimos quia ullam pariatur blanditiis sed voluptatum. Totam aut quidem laudantium tempora. Minima, saepe earum!
-                                        </p>
-                                        <div class="d-flex justify-content-sm-center">
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="testimonial-item" data-dot="<img class='img-fluid' src='img/testimonial-img-3.jpg' alt=''>">
-                                    <div class="row gy-4 gx-2 mb-4">
-                                        <div class="col-sm-6">
-                                            <div class="d-flex justify-content-sm-end">
-                                                <div class="testimonial-inner-img border border-primary border-3 me-4" style="width: 100px; height: 100px;">
-                                                    <img src="img/testimonial-img-3.jpg" class="img-fluid" style="object-fit: cover;" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div>
-                                                <h5 class="mb-2">John Abraham</h5>
-                                                <p class="mb-0">New York, USA</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-sm-center">
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores nemo facilis tempora esse explicabo sed! Dignissimos quia ullam pariatur blanditiis sed voluptatum. Totam aut quidem laudantium tempora. Minima, saepe earum!
-                                        </p>
-                                        <div class="d-flex justify-content-sm-center">
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              <!-- HATIL — IT Officer -->
+              <div class="col-12">
+                <div class="experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.5s">
+                  <div class="d-flex align-items-center mb-3">
+                    <p class="fs-5 mb-0 me-4">HATIL FURNITURE LTD. • Dhaka</p>
+                    <div><span class="fa fa-calendar me-1"></span> Jul 2013 – Nov 2016</div>
+                  </div>
+                  <h4 class="mb-3">IT Officer</h4>
+                  <p class="mb-0">
+                    Delivered onsite/remote support for retail stores and factory units—OS/app installs, networking, printers/POS,
+                    and user training. Assisted with ERP rollouts and scheduled backups to keep operations smooth.
+                  </p>
                 </div>
+              </div>
+
+              <!-- HATIL — Junior IT Officer -->
+              <div class="col-12">
+                <div class="experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.6s">
+                  <div class="d-flex align-items-center mb-3">
+                    <p class="fs-5 mb-0 me-4">HATIL FURNITURE LTD. • Dhaka</p>
+                    <div><span class="fa fa-calendar me-1"></span> Oct 2011 – Jun 2013</div>
+                  </div>
+                  <h4 class="mb-3">Junior IT Officer</h4>
+                  <p class="mb-0">
+                    Entry-level support in a high-volume furniture manufacturing & retail/export environment:
+                    desktop setup, user onboarding, routine maintenance, and basic network tasks across branches.
+                  </p>
+                </div>
+              </div>
+
+            </div><!-- /.row -->
+          </div><!-- /.experience-content -->
+        </div><!-- /.col -->
+      </div>
+    </div>
+  </div>
+  <!-- Experience End -->
+
+  <!-- Skills Start -->
+  <div class="container-fluid" id="skills">
+    <div class="container">
+      <div class="row g-0">
+        <!-- Left header -->
+        <div class="col-lg-3">
+          <div class="skills-header h-100 bg-dark pt-6 pe-6 pb-6">
+            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+              <p class="text-white sub-title">Skills</p>
+              <h1 class="display-6 text-white mb-0">My expertise skills</h1>
             </div>
+          </div>
         </div>
-        <!-- Testimonial End -->
 
+        <!-- Right content -->
+        <div class="col-lg-9">
+          <div class="skills-content h-100 pt-6 ps-6 pb-6">
 
-        <!-- Contact Start -->
-        <div class="container-fluid" id="pigraContact">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-lg-3">
-                        <div class="contact-header h-100 bg-dark pt-6 pe-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">Contact Me</p>
-                                <h1 class="display-6 text-white mb-0">Let’s Start A New Project</h1>
-                            </div>
+            <!-- Core Capabilities -->
+            <div class="mb-4 wow fadeInUp" data-wow-delay="0.1s">
+              <h4 class="mb-3">Core Capabilities</h4>
+            </div>
+
+            <div class="row g-4">
+              <!-- Python -->
+              <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+                <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
+                  <div class="text-primary mb-3"><i class="fab fa-python fa-3x" aria-hidden="true"></i></div>
+                  <div class="counter-counting d-flex justify-content-center">
+                    <h4 class="display-6">95</h4><h4 class="display-6">%</h4>
+                  </div>
+                  <p class="mb-0">Python (data · ML · automation)</p>
+                </div>
+              </div>
+
+              <!-- SQL -->
+              <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+                <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.2s">
+                  <div class="text-primary mb-3"><i class="fas fa-database fa-3x" aria-hidden="true"></i></div>
+                  <div class="counter-counting d-flex justify-content-center">
+                    <h4 class="display-6">93</h4><h4 class="display-6">%</h4>
+                  </div>
+                  <p class="mb-0">SQL (advanced · ETL · reporting)</p>
+                </div>
+              </div>
+
+              <!-- Power BI -->
+              <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+                <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
+                  <div class="text-primary mb-3"><i class="fas fa-chart-pie fa-3x" aria-hidden="true"></i></div>
+                  <div class="counter-counting d-flex justify-content-center">
+                    <h4 class="display-6">92</h4><h4 class="display-6">%</h4>
+                  </div>
+                  <p class="mb-0">Power BI (dashboards · viz)</p>
+                </div>
+              </div>
+
+              <!-- Data Cleaning & Wrangling -->
+              <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+                <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.4s">
+                  <div class="text-primary mb-3"><i class="fas fa-broom fa-3x" aria-hidden="true"></i></div>
+                  <div class="counter-counting d-flex justify-content-center">
+                    <h4 class="display-6">96</h4><h4 class="display-6">%</h4>
+                  </div>
+                  <p class="mb-0">Data cleaning &amp; wrangling</p>
+                </div>
+              </div>
+
+              <!-- Predictive Analytics & Modeling -->
+              <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+                <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.5s">
+                  <div class="text-primary mb-3"><i class="fas fa-chart-line fa-3x" aria-hidden="true"></i></div>
+                  <div class="counter-counting d-flex justify-content-center">
+                    <h4 class="display-6">90</h4><h4 class="display-6">%</h4>
+                  </div>
+                  <p class="mb-0">Predictive analytics &amp; modeling</p>
+                </div>
+              </div>
+
+              <!-- Statistics & A/B Testing -->
+              <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+                <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.6s">
+                  <div class="text-primary mb-3"><i class="fas fa-flask fa-3x" aria-hidden="true"></i></div>
+                  <div class="counter-counting d-flex justify-content-center">
+                    <h4 class="display-6">88</h4><h4 class="display-6">%</h4>
+                  </div>
+                  <p class="mb-0">Statistical analysis &amp; A/B testing</p>
+                </div>
+              </div>
+
+              <!-- Business Intelligence -->
+              <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+                <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.7s">
+                  <div class="text-primary mb-3"><i class="fas fa-briefcase fa-3x" aria-hidden="true"></i></div>
+                  <div class="counter-counting d-flex justify-content-center">
+                    <h4 class="display-6">91</h4><h4 class="display-6">%</h4>
+                  </div>
+                  <p class="mb-0">Business intelligence</p>
+                </div>
+              </div>
+
+              <!-- Data Storytelling -->
+              <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+                <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.8s">
+                  <div class="text-primary mb-3"><i class="fas fa-chalkboard fa-3x" aria-hidden="true"></i></div>
+                  <div class="counter-counting d-flex justify-content-center">
+                    <h4 class="display-6">89</h4><h4 class="display-6">%</h4>
+                  </div>
+                  <p class="mb-0">Data storytelling &amp; presentation</p>
+                </div>
+              </div>
+
+              <!-- Ad Hoc Investigation -->
+              <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+                <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.9s">
+                  <div class="text-primary mb-3"><i class="fas fa-search fa-3x" aria-hidden="true"></i></div>
+                  <div class="counter-counting d-flex justify-content-center">
+                    <h4 class="display-6">94</h4><h4 class="display-6">%</h4>
+                  </div>
+                  <p class="mb-0">Ad hoc data investigation</p>
+                </div>
+              </div>
+
+              <!-- DB Design & Optimization -->
+              <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+                <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="1.0s">
+                  <div class="text-primary mb-3"><i class="fas fa-server fa-3x" aria-hidden="true"></i></div>
+                  <div class="counter-counting d-flex justify-content-center">
+                    <h4 class="display-6">87</h4><h4 class="display-6">%</h4>
+                  </div>
+                  <p class="mb-0">DB design &amp; optimization</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tech Stack -->
+            <div class="mt-5 wow fadeInUp" data-wow-delay="0.1s">
+              <h4 class="mb-3">Tech Stack</h4>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-light text-dark border"><i class="fab fa-python me-2"></i>Python</span>
+                <span class="badge bg-light text-dark border"><i class="fas fa-database me-2"></i>SQL</span>
+                <span class="badge bg-light text-dark border"><i class="fas fa-cubes me-2"></i>NumPy</span>
+                <span class="badge bg-light text-dark border"><i class="fas fa-table me-2"></i>pandas</span>
+                <span class="badge bg-light text-dark border"><i class="fas fa-chart-bar me-2"></i>Matplotlib</span>
+                <span class="badge bg-light text-dark border"><i class="fas fa-wave-square me-2"></i>Seaborn</span>
+                <span class="badge bg-light text-dark border"><i class="fas fa-brain me-2"></i>scikit-learn</span>
+                <span class="badge bg-light text-dark border"><i class="fas fa-chart-pie me-2"></i>Power BI</span>
+                <span class="badge bg-light text-dark border"><i class="fas fa-chart-line me-2"></i>Tableau</span>
+                <span class="badge bg-light text-dark border"><i class="far fa-file-excel me-2"></i>Excel</span>
+                <span class="badge bg-light text-dark border"><i class="fas fa-project-diagram me-2"></i>Power Query</span>
+                <span class="badge bg-light text-dark border"><i class="fas fa-superscript me-2"></i>DAX</span>
+                <span class="badge bg-light text-dark border"><i class="fab fa-git-alt me-2"></i>Git</span>
+                <span class="badge bg-light text-dark border"><i class="fas fa-book me-2"></i>Jupyter</span>
+              </div>
+            </div>
+
+          </div><!-- /.skills-content -->
+        </div><!-- /.col-lg-9 -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div>
+  <!-- Skills End -->
+
+  <!-- Service Start -->
+  <div class="container-fluid" id="pigraService">
+    <div class="container">
+      <div class="row g-0">
+
+        <!-- Left header -->
+        <div class="col-lg-3">
+          <div class="service-header h-100 bg-dark pt-6 pe-6 pb-6">
+            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+              <p class="text-white sub-title">My Services</p>
+              <h1 class="display-6 text-white mb-0">What I do for you</h1>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right content -->
+        <div class="col-lg-9">
+          <div class="service-content h-100 pt-6 ps-6 pb-6">
+            <div class="row g-4">
+
+              <!-- Data Analysis & Visualization -->
+              <div class="col-12">
+                <div class="service-item p-4 wow fadeInUp" data-wow-delay="0.1s">
+                  <div class="row g-4 align-items-center">
+                    <div class="col-xl-2">
+                      <i class="fas fa-chart-bar fa-3x" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-xl-3">
+                      <a href="#" class="h4 mb-0">Data Analysis &amp; Visualization</a>
+                    </div>
+                    <div class="col-xl-4">
+                      <p class="mb-0">Transform complex data into actionable insights with Power BI, SQL, and Python. Build interactive dashboards and reports to guide decisions.</p>
+                    </div>
+                    <div class="col-xl-3">
+                      <p class="mb-1"><i class="fa fa-check me-2"></i> KPI dashboards</p>
+                      <p class="mb-1"><i class="fa fa-check me-2"></i> Visual storytelling</p>
+                      <p class="mb-0"><i class="fa fa-check me-2"></i> Executive reporting</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Business Intelligence Solutions -->
+              <div class="col-12">
+                <div class="service-item p-4 wow fadeInUp" data-wow-delay="0.3s">
+                  <div class="row g-4 align-items-center">
+                    <div class="col-xl-2">
+                      <i class="fas fa-layer-group fa-3x" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-xl-3">
+                      <a href="#" class="h4 mb-0">Business Intelligence Solutions</a>
+                    </div>
+                    <div class="col-xl-4">
+                      <p class="mb-0">Design and deliver BI for sales, marketing, HR, finance, and operations to track performance and improve efficiency.</p>
+                    </div>
+                    <div class="col-xl-3">
+                      <p class="mb-1"><i class="fa fa-check me-2"></i> Data modeling</p>
+                      <p class="mb-1"><i class="fa fa-check me-2"></i> Governance &amp; access</p>
+                      <p class="mb-0"><i class="fa fa-check me-2"></i> Self-serve analytics</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Predictive Modeling & Machine Learning -->
+              <div class="col-12">
+                <div class="service-item p-4 wow fadeInUp" data-wow-delay="0.5s">
+                  <div class="row g-4 align-items-center">
+                    <div class="col-xl-2">
+                      <i class="fas fa-robot fa-3x" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-xl-3">
+                      <a href="#" class="h4 mb-0">Predictive Modeling &amp; ML</a>
+                    </div>
+                    <div class="col-xl-4">
+                      <p class="mb-0">Forecasting, risk analysis, and customer segmentation— including fraud and churn prediction—using statistical &amp; ML methods.</p>
+                    </div>
+                    <div class="col-xl-3">
+                      <p class="mb-1"><i class="fa fa-check me-2"></i> Classification/forecasting</p>
+                      <p class="mb-1"><i class="fa fa-check me-2"></i> Feature engineering</p>
+                      <p class="mb-0"><i class="fa fa-check me-2"></i> Model evaluation</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- A/B Testing & Experimentation -->
+              <div class="col-12">
+                <div class="service-item p-4 wow fadeInUp" data-wow-delay="0.7s">
+                  <div class="row g-4 align-items-center">
+                    <div class="col-xl-2">
+                      <i class="fas fa-flask fa-3x" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-xl-3">
+                      <a href="#" class="h4 mb-0">A/B Testing &amp; Experimentation</a>
+                    </div>
+                    <div class="col-xl-4">
+                      <p class="mb-0">Design, execute, and analyze controlled experiments to optimize product, processes, and marketing campaigns.</p>
+                    </div>
+                    <div class="col-xl-3">
+                      <p class="mb-1"><i class="fa fa-check me-2"></i> Test design</p>
+                      <p class="mb-1"><i class="fa fa-check me-2"></i> Significance &amp; lift</p>
+                      <p class="mb-0"><i class="fa fa-check me-2"></i> Experiment platforms</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Database Management & ETL -->
+              <div class="col-12">
+                <div class="service-item p-4 wow fadeInUp" data-wow-delay="0.9s">
+                  <div class="row g-4 align-items-center">
+                    <div class="col-xl-2">
+                      <i class="fas fa-database fa-3x" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-xl-3">
+                      <a href="#" class="h4 mb-0">Database Management &amp; ETL</a>
+                    </div>
+                    <div class="col-xl-4">
+                      <p class="mb-0">Develop, optimize, and maintain relational databases. Build robust ETL/ELT pipelines for analysis-ready data.</p>
+                    </div>
+                    <div class="col-xl-3">
+                      <p class="mb-1"><i class="fa fa-check me-2"></i> Advanced SQL</p>
+                      <p class="mb-1"><i class="fa fa-check me-2"></i> ETL/ELT pipelines</p>
+                      <p class="mb-0"><i class="fa fa-check me-2"></i> Performance tuning</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Ad Hoc Analytics & Problem Solving -->
+              <div class="col-12">
+                <div class="service-item p-4 wow fadeInUp" data-wow-delay="1.1s">
+                  <div class="row g-4 align-items-center">
+                    <div class="col-xl-2">
+                      <i class="fas fa-search fa-3x" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-xl-3">
+                      <a href="#" class="h4 mb-0">Ad Hoc Analytics &amp; Problem Solving</a>
+                    </div>
+                    <div class="col-xl-4">
+                      <p class="mb-0">Rapidly investigate urgent business questions using SQL, Python, and statistical analysis.</p>
+                    </div>
+                    <div class="col-xl-3">
+                      <p class="mb-1"><i class="fa fa-check me-2"></i> Drill-down analysis</p>
+                      <p class="mb-1"><i class="fa fa-check me-2"></i> Anomaly detection</p>
+                      <p class="mb-0"><i class="fa fa-check me-2"></i> Decision support</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Data Storytelling & Communication -->
+              <div class="col-12">
+                <div class="service-item p-4 wow fadeInUp" data-wow-delay="1.3s">
+                  <div class="row g-4 align-items-center">
+                    <div class="col-xl-2">
+                      <i class="fas fa-chalkboard fa-3x" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-xl-3">
+                      <a href="#" class="h4 mb-0">Data Storytelling &amp; Communication</a>
+                    </div>
+                    <div class="col-xl-4">
+                      <p class="mb-0">Present complex findings through executive dashboards, clear visualizations, and professional documentation for any audience.</p>
+                    </div>
+                    <div class="col-xl-3">
+                      <p class="mb-1"><i class="fa fa-check me-2"></i> Executive decks</p>
+                      <p class="mb-1"><i class="fa fa-check me-2"></i> Documentation</p>
+                      <p class="mb-0"><i class="fa fa-check me-2"></i> Stakeholder comms</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div><!-- /.row -->
+          </div><!-- /.service-content -->
+        </div><!-- /.col-lg-9 -->
+
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div>
+  <!-- Service End -->
+
+  <!-- Portfolio / My Recent Works Start -->
+  <div class="container-fluid" id="pigraPortfolio">
+    <div class="container">
+      <div class="row g-0">
+
+        <!-- Left header -->
+        <div class="col-lg-3">
+          <div class="portfolio-header h-100 bg-dark pt-6 pe-6 pb-6">
+            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+              <p class="text-white sub-title">Portfolio</p>
+              <h1 class="display-6 text-white mb-0">My Recent Works</h1>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right content -->
+        <div class="col-lg-9">
+          <div class="portfolio-content h-100 pt-6 ps-6 pb-6">
+
+            <!-- ===== Python Projects ===== -->
+            <div class="mb-4 wow fadeInUp" data-wow-delay="0.1s">
+              <h4 class="d-flex align-items-center gap-2"><i class="fab fa-python"></i> Python Projects</h4>
+              <p class="mb-3 text-muted">Customer analytics, risk modeling, monitoring, and operations.</p>
+
+              <div class="row g-4">
+                <!-- 1. Churn -->
+                <div class="col-md-6">
+                  <div class="p-4 rounded border h-100">
+                    <h5 class="mb-2">Telecom Customer Churn Analysis</h5>
+                    <p class="mb-3">Retention-focused modeling and segmentation with actionable insights.</p>
+                    <a class="btn btn-sm btn-outline-primary" target="_blank" href="https://github.com/Istiak-Alam/Datacamp-Projects/tree/main/Python%20Projects/Telecom%20Customer%20Churn%20Analysis"><i class="fab fa-github me-2"></i>GitHub</a>
+                  </div>
+                </div>
+                <!-- 2. Credit Risk -->
+                <div class="col-md-6">
+                  <div class="p-4 rounded border h-100">
+                    <h5 class="mb-2">Credit Card Approval Prediction</h5>
+                    <p class="mb-3">Risk modeling pipeline with feature engineering and evaluation.</p>
+                    <a class="btn btn-sm btn-outline-primary" target="_blank" href="https://github.com/Istiak-Alam/Datacamp-Projects/tree/main/Python%20Projects/Credit%20Card%20Approval%20Prediction"><i class="fab fa-github me-2"></i>GitHub</a>
+                  </div>
+                </div>
+                <!-- 3. Fraud Monitoring -->
+                <div class="col-md-6">
+                  <div class="p-4 rounded border h-100">
+                    <h5 class="mb-2">Fraud Detection Model Monitoring</h5>
+                    <p class="mb-3">Production drift monitoring and alerting to sustain model performance.</p>
+                    <a class="btn btn-sm btn-outline-primary" target="_blank" href="https://github.com/Istiak-Alam/Datacamp-Projects/tree/main/Python%20Projects/Fraud%20Detection%20Model%20Monitoring"><i class="fab fa-github me-2"></i>GitHub</a>
+                  </div>
+                </div>
+                <!-- 4. Flight Ops -->
+                <div class="col-md-6">
+                  <div class="p-4 rounded border h-100">
+                    <h5 class="mb-2">Flight Delay & Cancellation Analysis</h5>
+                    <p class="mb-3">EDA + modeling to reduce operational delays and improve reliability.</p>
+                    <a class="btn btn-sm btn-outline-primary" target="_blank" href="https://github.com/Istiak-Alam/Datacamp-Projects/tree/main/Python%20Projects/Pacific%20Northwest%20Flight%20Departure%20Delay%20%26%20Cancellation%20Analysis"><i class="fab fa-github me-2"></i>GitHub</a>
+                  </div>
+                </div>
+                <!-- 5. EV Market -->
+                <div class="col-md-6">
+                  <div class="p-4 rounded border h-100">
+                    <h5 class="mb-2">US EV Infrastructure & Sales Trends</h5>
+                    <p class="mb-3">Market analysis of EV adoption and charging infrastructure growth.</p>
+                    <a class="btn btn-sm btn-outline-primary" target="_blank" href="https://github.com/Istiak-Alam/Datacamp-Projects/tree/main/Python%20Projects/US%20Electric%20Vehicle%20Charging%20Infrastructure%20%26%20Sales%20Trends"><i class="fab fa-github me-2"></i>GitHub</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-3">
+                <a class="btn btn-link p-0" target="_blank" href="https://github.com/Istiak-Alam/Datacamp-Projects/tree/main/Python%20Projects">
+                  See 12+ more Python projects here <i class="fa fa-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+
+            <hr class="my-5">
+
+            <!-- ===== SQL Projects ===== -->
+            <div class="mb-4 wow fadeInUp" data-wow-delay="0.1s">
+              <h4 class="d-flex align-items-center gap-2"><i class="fas fa-database"></i> SQL Projects</h4>
+              <p class="mb-3 text-muted">ETL, analytics engineering, and KPI reporting.</p>
+
+              <div class="row g-4">
+                <!-- 1. Super Store -->
+                <div class="col-md-6">
+                  <div class="p-4 rounded border h-100">
+                    <h5 class="mb-2">PostgreSQL Super Store — Cleaning & Analysis</h5>
+                    <p class="mb-3">End-to-end ETL + analytics for sales KPIs, product mix, customer cohorts.</p>
+                    <a class="btn btn-sm btn-outline-primary" target="_blank" href="https://github.com/Istiak-Alam/Datacamp-Projects/tree/main/SQL%20Project/Cleaning%20and%20Analysis%20of%20a%20PostgreSQL%20Super%20Store%20Database"><i class="fab fa-github me-2"></i>GitHub</a>
+                  </div>
+                </div>
+                <!-- 2. SPC -->
+                <div class="col-md-6">
+                  <div class="p-4 rounded border h-100">
+                    <h5 class="mb-2">Statistical Process Control (Manufacturing)</h5>
+                    <p class="mb-3">Quality control analytics and SPC charts for operational excellence.</p>
+                    <a class="btn btn-sm btn-outline-primary" target="_blank" href="https://github.com/Istiak-Alam/Datacamp-Projects/tree/main/SQL%20Project/Statistical%20Process%20Control%20for%20Manufacturing%20Parts"><i class="fab fa-github me-2"></i>GitHub</a>
+                  </div>
+                </div>
+                <!-- 3. Unicorns -->
+                <div class="col-md-6">
+                  <div class="p-4 rounded border h-100">
+                    <h5 class="mb-2">Industry Trends in Unicorn Companies</h5>
+                    <p class="mb-3">Sector growth and investment benchmarks for strategy.</p>
+                    <a class="btn btn-sm btn-outline-primary" target="_blank" href="https://github.com/Istiak-Alam/Datacamp-Projects/tree/main/SQL%20Project/Industry%20Trends%20in%20Unicorn%20Companies"><i class="fab fa-github me-2"></i>GitHub</a>
+                  </div>
+                </div>
+                <!-- 4. Video Games -->
+                <div class="col-md-6">
+                  <div class="p-4 rounded border h-100">
+                    <h5 class="mb-2">Video Game Market & Ratings Analysis</h5>
+                    <p class="mb-3">Sales performance, genre trends, and ratings via analytic SQL.</p>
+                    <a class="btn btn-sm btn-outline-primary" target="_blank" href="https://github.com/Istiak-Alam/Datacamp-Projects/tree/main/SQL%20Project/Video%20Game%20Market%20and%20Ratings%20Analysis"><i class="fab fa-github me-2"></i>GitHub</a>
+                  </div>
+                </div>
+                <!-- 5. Debt -->
+                <div class="col-md-6">
+                  <div class="p-4 rounded border h-100">
+                    <h5 class="mb-2">International Debt Analysis</h5>
+                    <p class="mb-3">Country-level debt trends and comparisons with window functions.</p>
+                    <a class="btn btn-sm btn-outline-primary" target="_blank" href="https://github.com/Istiak-Alam/Datacamp-Projects/tree/main/SQL%20Project/International%20Debt%20Analysis"><i class="fab fa-github me-2"></i>GitHub</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-3">
+                <a class="btn btn-link p-0" target="_blank" href="https://github.com/Istiak-Alam/Datacamp-Projects/tree/main/SQL%20Project">
+                  See 9+ more SQL projects here <i class="fa fa-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+
+            <hr class="my-5">
+
+            <!-- ===== Power BI Projects ===== -->
+            <div class="mb-4 wow fadeInUp" data-wow-delay="0.1s">
+              <h4 class="d-flex align-items-center gap-2"><i class="fas fa-chart-pie"></i> Power BI Projects</h4>
+              <p class="mb-3 text-muted">Executive dashboards across sales, e-commerce, supply chain, HR, and healthcare.</p>
+
+              <div class="row g-4">
+                <!-- 1. Sales -->
+                <div class="col-md-6">
+                  <div class="p-4 rounded border h-100">
+                    <h5 class="mb-2">Sales Performance Analysis</h5>
+                    <p class="mb-3">Revenue KPIs, regional trends, and product performance for executives.</p>
+                    <a class="btn btn-sm btn-outline-primary" target="_blank" href="https://github.com/Istiak-Alam/Datacamp-Projects/tree/main/PowerBi%20Projects/Sales%20Performance%20Analysis"><i class="fab fa-github me-2"></i>GitHub</a>
+                  </div>
+                </div>
+                <!-- 2. E-commerce -->
+                <div class="col-md-6">
+                  <div class="p-4 rounded border h-100">
+                    <h5 class="mb-2">E-commerce Performance (Case Study)</h5>
+                    <p class="mb-3">Cohorts, funnels, and category insights for growth optimization.</p>
+                    <a class="btn btn-sm btn-outline-primary" target="_blank" href="https://github.com/Istiak-Alam/Datacamp-Projects/tree/main/PowerBi%20Projects/case-study-ecommerce-analysis-in-power-bi"><i class="fab fa-github me-2"></i>GitHub</a>
+                  </div>
+                </div>
+                <!-- 3. Supply Chain -->
+                <div class="col-md-6">
+                  <div class="p-4 rounded border h-100">
+                    <h5 class="mb-2">Supply Chain Analytics</h5>
+                    <p class="mb-3">Inventory, sourcing, and supplier performance for ops efficiency.</p>
+                    <a class="btn btn-sm btn-outline-primary" target="_blank" href="https://github.com/Istiak-Alam/Datacamp-Projects/tree/main/PowerBi%20Projects/case-study-supply-chain-analytics"><i class="fab fa-github me-2"></i>GitHub</a>
+                  </div>
+                </div>
+                <!-- 4. HR -->
+                <div class="col-md-6">
+                  <div class="p-4 rounded border h-100">
+                    <h5 class="mb-2">HR Analytics in Power BI</h5>
+                    <p class="mb-3">Workforce demographics, attrition, and productivity insights.</p>
+                    <a class="btn btn-sm btn-outline-primary" target="_blank" href="https://github.com/Istiak-Alam/Datacamp-Projects/tree/main/PowerBi%20Projects/case-study-hr-analytics-in-power-bi"><i class="fab fa-github me-2"></i>GitHub</a>
+                  </div>
+                </div>
+                <!-- 5. Healthcare -->
+                <div class="col-md-6">
+                  <div class="p-4 rounded border h-100">
+                    <h5 class="mb-2">Healthcare Analytics</h5>
+                    <p class="mb-3">Patient, treatment, and outcome dashboards for operations.</p>
+                    <a class="btn btn-sm btn-outline-primary" target="_blank" href="https://github.com/Istiak-Alam/Datacamp-Projects/tree/main/PowerBi%20Projects/case-study-healthcare-analytics-in-power-bi"><i class="fab fa-github me-2"></i>GitHub</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-3">
+                <a class="btn btn-link p-0" target="_blank" href="https://github.com/Istiak-Alam/Datacamp-Projects/tree/main/PowerBi%20Projects">
+                  See 10+ more Power BI projects here <i class="fa fa-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+
+          </div><!-- /.portfolio-content -->
+        </div><!-- /.col-lg-9 -->
+
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div>
+  <!-- Portfolio End -->
+
+  <!-- Certifications Start -->
+  <div class="container-fluid" id="certifications">
+    <div class="container">
+      <div class="row g-0">
+
+        <!-- Left header -->
+        <div class="col-lg-3">
+          <div class="blog-header h-100 bg-dark pt-6 pe-6 pb-6">
+            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+              <p class="text-white sub-title">Certifications</p>
+              <h1 class="display-6 text-white mb-0">Credentials &amp; Certifications</h1>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right content -->
+        <div class="col-lg-9">
+          <div class="blog-content h-100 pt-6 ps-6 pb-6">
+            <div class="row g-4">
+
+              <!-- 1) Microsoft Certified: Power BI Data Analyst Associate (PL-300) -->
+              <div class="col-xl-6">
+                <div class="blog-item wow fadeInUp" data-wow-delay="0.1s">
+                  <div class="row g-4">
+                    <div class="col-4">
+                      <div class="blog-item-img bg-dark h-100 d-flex align-items-center justify-content-center rounded">
+                        <i class="fab fa-microsoft fa-3x text-white" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <div class="h-100">
+                        <a href="https://learn.microsoft.com/en-us/users/istiakalam-7457/credentials/fb870692bf91cdb" target="_blank" rel="noopener" class="d-inline-block h4 mb-2">
+                          Microsoft Certified: Power BI Data Analyst Associate (PL-300)
+                        </a>
+                        <p class="mb-3 text-body">DAX, data modeling, performance tuning, governance, and enterprise BI delivery.</p>
+                        <div class="py-2 px-3 bg-light d-flex justify-content-between flex-wrap">
+                          <span class="text-body">Issuer: Microsoft</span>
+                          <a href="https://learn.microsoft.com/en-us/users/istiakalam-7457/credentials/fb870692bf91cdb" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener"><i class="fas fa-link me-2"></i>Verify</a>
                         </div>
+                      </div>
                     </div>
-                    <div class="col-lg-9">
-                       <div class="contact-content h-100 pt-6 ps-6 pb-6">
-                            <div class="bg-light p-4">
-                                <div class="row g-5">
-                                    <div class="col-xl-5 wow fadeInUp" data-wow-delay="0.1s">
-                                        <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a class="text-primary fw-bold" href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
-                                        <div class="d-flex mb-4">
-                                            <div class="btn-xl-square bg-primary text-white me-3">
-                                                <i class="fas fa-map-marker-alt"></i>
-                                            </div>
-                                            <div>
-                                                <h4>Address</h4>
-                                                <p class="mb-0">123 Street New York.USA</p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex mb-4">
-                                            <div class="btn-xl-square bg-primary text-white me-3">
-                                                <i class="fas fa-envelope"></i>
-                                            </div>
-                                            <div>
-                                                <h4>Mail Us</h4>
-                                                <p class="mb-0">info@example.com</p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex">
-                                            <div class="btn-xl-square bg-primary text-white me-3">
-                                                <i class="fa fa-phone-alt"></i>
-                                            </div>
-                                            <div>
-                                                <h4>Telephone</h4>
-                                                <p class="mb-0">(+012) 3456 7890</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-7 wow fadeInUp" data-wow-delay="0.3s">
-                                        <div>
-                                            <form>
-                                                <div class="row g-3">
-                                                    <div class="col-lg-12 col-xl-6">
-                                                        <div class="form-floating">
-                                                            <input type="text" class="form-control border-0" id="name" placeholder="Your Name">
-                                                            <label for="name">Your Name</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-12 col-xl-6">
-                                                        <div class="form-floating">
-                                                            <input type="email" class="form-control border-0" id="email" placeholder="Your Email">
-                                                            <label for="email">Your Email</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-12 col-xl-6">
-                                                        <div class="form-floating">
-                                                            <input type="phone" class="form-control border-0" id="phone" placeholder="Phone">
-                                                            <label for="phone">Your Phone</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-12 col-xl-6">
-                                                        <div class="form-floating">
-                                                            <input type="text" class="form-control border-0" id="project" placeholder="Project">
-                                                            <label for="project">Your Project</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <div class="form-floating">
-                                                            <input type="text" class="form-control border-0" id="subject" placeholder="Subject">
-                                                            <label for="subject">Subject</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <div class="form-floating">
-                                                            <textarea class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 120px"></textarea>
-                                                            <label for="message">Message</label>
-                                                        </div>
-                
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <button class="btn btn-primary w-100 py-3">Send Message</button>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 wow fadeInUp" data-wow-delay="0.5s">
-                                        <div class="rounded">
-                                            <iframe class="rounded w-100" 
-                                            style="height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.33750346623!2d-73.97968099999999!3d40.6974881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1694259649153!5m2!1sen!2sbd" 
-                                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                       </div>
-                    </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-        <!-- Contact End -->
+              </div>
 
-
-        <!-- Footer Start -->
-        <div class="container-fluid footer bg-dark border-bottom-0">
-            <div class="container wow fadeIn" data-wow-delay="0.1s">
-                <div class="row g-0">
-                    <div class="col-12">
-                       <div class="footer-content h-100 pt-6 ps-6 pb-6">
-                            <div class="row g-4 align-items-center">
-                                <div class="col-12 text-center">
-                                    <div class="d-flex justify-content-center">
-                                        <a class="btn btn-light btn-md-square me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-light btn-md-square me-3" href=""><i class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-light btn-md-square me-3" href=""><i class="fab fa-instagram"></i></a>
-                                        <a class="btn btn-light btn-md-square me-0" href=""><i class="fab fa-linkedin-in"></i></a>
-                                    </div>
-                                </div>
-                                <div class="col-12 text-center">
-                                    <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-body me-2"></i>Your Site Name</a>, All right reserved.</span>
-                                </div>
-                                <div class="col-12 text-center text-body">
-                                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                                    Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a>
-                                </div>
-                            </div>
-                       </div>        
+              <!-- 2) Google Advanced Data Analytics Professional Certificate -->
+              <div class="col-xl-6">
+                <div class="blog-item wow fadeInUp" data-wow-delay="0.2s">
+                  <div class="row g-4">
+                    <div class="col-4">
+                      <div class="blog-item-img bg-dark h-100 d-flex align-items-center justify-content-center rounded">
+                        <i class="fab fa-google fa-3x text-white" aria-hidden="true"></i>
+                      </div>
                     </div>
+                    <div class="col-8">
+                      <div class="h-100">
+                        <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/KPUPMFHPS491" target="_blank" rel="noopener" class="d-inline-block h4 mb-2">
+                          Google Advanced Data Analytics Professional Certificate
+                        </a>
+                        <p class="mb-3 text-body">Advanced stats, ML, experimentation, forecasting, and SQL/Python analytics.</p>
+                        <div class="py-2 px-3 bg-light d-flex justify-content-between flex-wrap">
+                          <span class="text-body">Issuer: Google</span>
+                          <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/KPUPMFHPS491" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener"><i class="fas fa-link me-2"></i>Verify</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
+
+              <!-- 3) Google Data Analytics Professional Certificate -->
+              <div class="col-xl-6">
+                <div class="blog-item wow fadeInUp" data-wow-delay="0.3s">
+                  <div class="row g-4">
+                    <div class="col-4">
+                      <div class="blog-item-img bg-dark h-100 d-flex align-items-center justify-content-center rounded">
+                        <i class="fab fa-google fa-3x text-white" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <div class="h-100">
+                        <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/SEVER9OO84YV" target="_blank" rel="noopener" class="d-inline-block h4 mb-2">
+                          Google Data Analytics Professional Certificate
+                        </a>
+                        <p class="mb-3 text-body">Data cleaning, analysis, visualization, and stakeholder-ready insights.</p>
+                        <div class="py-2 px-3 bg-light d-flex justify-content-between flex-wrap">
+                          <span class="text-body">Issuer: Google</span>
+                          <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/SEVER9OO84YV" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener"><i class="fas fa-link me-2"></i>Verify</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4) IBM Data Analyst Professional Certificate -->
+              <div class="col-xl-6">
+                <div class="blog-item wow fadeInUp" data-wow-delay="0.4s">
+                  <div class="row g-4">
+                    <div class="col-4">
+                      <div class="blog-item-img bg-dark h-100 d-flex align-items-center justify-content-center rounded">
+                        <i class="fas fa-chart-line fa-3x text-white" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <div class="h-100">
+                        <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/H09L8ULS1B6X" target="_blank" rel="noopener" class="d-inline-block h4 mb-2">
+                          IBM Data Analyst Professional Certificate
+                        </a>
+                        <p class="mb-3 text-body">Excel/SQL/Python analytics, dashboards, and applied business cases.</p>
+                        <div class="py-2 px-3 bg-light d-flex justify-content-between flex-wrap">
+                          <span class="text-body">Issuer: IBM</span>
+                          <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/H09L8ULS1B6X" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener"><i class="fas fa-link me-2"></i>Verify</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 5) CompTIA Data+ -->
+              <div class="col-xl-6">
+                <div class="blog-item wow fadeInUp" data-wow-delay="0.5s">
+                  <div class="row g-4">
+                    <div class="col-4">
+                      <div class="blog-item-img bg-dark h-100 d-flex align-items-center justify-content-center rounded">
+                        <i class="fas fa-signal fa-3x text-white" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <div class="h-100">
+                        <a href="https://www.certmetrics.com/comptia/public/verification.aspx?code=CPHNTJ6R0Y5LHG6J" target="_blank" rel="noopener" class="d-inline-block h4 mb-2">
+                          CompTIA Data+
+                        </a>
+                        <p class="mb-3 text-body">Vendor-neutral validation of data analytics concepts, mining, and visualization.</p>
+                        <div class="py-2 px-3 bg-light d-flex justify-content-between flex-wrap">
+                          <span class="text-body">Issuer: CompTIA</span>
+                          <a href="https://www.certmetrics.com/comptia/public/verification.aspx?code=CPHNTJ6R0Y5LHG6J" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener"><i class="fas fa-link me-2"></i>Verify</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 6) Microsoft Power BI Data Analyst Professional Certificate (Coursera) -->
+              <div class="col-xl-6">
+                <div class="blog-item wow fadeInUp" data-wow-delay="0.6s">
+                  <div class="row g-4">
+                    <div class="col-4">
+                      <div class="blog-item-img bg-dark h-100 d-flex align-items-center justify-content-center rounded">
+                        <i class="fas fa-chart-pie fa-3x text-white" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <div class="h-100">
+                        <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/P0H3QIXDTDJM" target="_blank" rel="noopener" class="d-inline-block h4 mb-2">
+                          Microsoft Power BI Data Analyst Professional Certificate
+                        </a>
+                        <p class="mb-3 text-body">Hands-on DAX, modeling, and report development aligned to PL-300 skills.</p>
+                        <div class="py-2 px-3 bg-light d-flex justify-content-between flex-wrap">
+                          <span class="text-body">Issuer: Microsoft / Coursera</span>
+                          <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/P0H3QIXDTDJM" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener"><i class="fas fa-link me-2"></i>Verify</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 7) Meta Data Analyst Professional Certificate -->
+              <div class="col-xl-6">
+                <div class="blog-item wow fadeInUp" data-wow-delay="0.7s">
+                  <div class="row g-4">
+                    <div class="col-4">
+                      <div class="blog-item-img bg-dark h-100 d-flex align-items-center justify-content-center rounded">
+                        <i class="fab fa-meta fa-3x text-white" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <div class="h-100">
+                        <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/PV57557D80IH" target="_blank" rel="noopener" class="d-inline-block h4 mb-2">
+                          Meta Data Analyst Professional Certificate
+                        </a>
+                        <p class="mb-3 text-body">SQL, Python, data viz, and analytics projects aligned to industry use-cases.</p>
+                        <div class="py-2 px-3 bg-light d-flex justify-content-between flex-wrap">
+                          <span class="text-body">Issuer: Meta / Coursera</span>
+                          <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/PV57557D80IH" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener"><i class="fas fa-link me-2"></i>Verify</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 8) CBAP Specialization -->
+              <div class="col-xl-6">
+                <div class="blog-item wow fadeInUp" data-wow-delay="0.8s">
+                  <div class="row g-4">
+                    <div class="col-4">
+                      <div class="blog-item-img bg-dark h-100 d-flex align-items-center justify-content-center rounded">
+                        <i class="fas fa-briefcase fa-3x text-white" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <div class="h-100">
+                        <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/ZOOXGEVTD4X1" target="_blank" rel="noopener" class="d-inline-block h4 mb-2">
+                          Certified Business Analysis Professional™ (CBAP®) Specialization
+                        </a>
+                        <p class="mb-3 text-body">Requirements, stakeholder analysis, and business impact framing (IIBA).</p>
+                        <div class="py-2 px-3 bg-light d-flex justify-content-between flex-wrap">
+                          <span class="text-body">Issuer: IIBA</span>
+                          <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/ZOOXGEVTD4X1" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener"><i class="fas fa-link me-2"></i>Verify</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 9) Google IT Support Professional Certificate -->
+              <div class="col-xl-6">
+                <div class="blog-item wow fadeInUp" data-wow-delay="0.9s">
+                  <div class="row g-4">
+                    <div class="col-4">
+                      <div class="blog-item-img bg-dark h-100 d-flex align-items-center justify-content-center rounded">
+                        <i class="fas fa-toolbox fa-3x text-white" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <div class="h-100">
+                        <a href="https://www.coursera.org/account/accomplishments/specialization/C7MPW6XE9PU3" target="_blank" rel="noopener" class="d-inline-block h4 mb-2">
+                          Google IT Support Professional Certificate
+                        </a>
+                        <p class="mb-3 text-body">Foundational IT support: networking, OS, troubleshooting (complementary skill).</p>
+                        <div class="py-2 px-3 bg-light d-flex justify-content-between flex-wrap">
+                          <span class="text-body">Issuer: Google</span>
+                          <a href="https://www.coursera.org/account/accomplishments/specialization/C7MPW6XE9PU3" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener"><i class="fas fa-link me-2"></i>Verify</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CTA -->
+              <div class="col-12 wow fadeInUp" data-wow-delay="1.0s">
+                <div class="blog-btn d-flex justify-content-center">
+                  <p class="mb-0 me-2">View all credentials on</p>
+                  <a href="https://www.linkedin.com/in/istiak-data-analyst/details/certifications/" target="_blank" rel="noopener" class="btn d-inline-block p-0">LinkedIn</a>
+                </div>
+              </div>
+
+            </div><!-- /.row -->
+          </div><!-- /.blog-content -->
+        </div><!-- /.col-lg-9 -->
+
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div>
+  <!-- Certifications End -->
+
+  <!-- Testimonial Start (kept commented out by your request) -->
+  <!--
+  ... testimonial markup ...
+  -->
+
+  <!-- Contact Start -->
+  <div class="container-fluid" id="pigraContact">
+    <div class="container">
+      <div class="row g-0">
+
+        <!-- Left header -->
+        <div class="col-lg-3">
+          <div class="contact-header h-100 bg-dark pt-6 pe-6 pb-6">
+            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+              <p class="text-white sub-title">Contact Me</p>
+              <h1 class="display-6 text-white mb-0">Let’s Start a New Project</h1>
             </div>
+          </div>
         </div>
-        <!-- Footer End -->
 
+        <!-- Right content -->
+        <div class="col-lg-9">
+          <div class="contact-content h-100 pt-6 ps-6 pb-6">
+            <div class="bg-light p-4">
+              <div class="row g-5">
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+                <!-- Contact details -->
+                <div class="col-xl-5 wow fadeInUp" data-wow-delay="0.1s">
+                  <p class="mb-4">Have a question or a project in mind? Send me a message and I’ll get back to you soon.</p>
 
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/counterup/counterup.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        
+                  <div class="d-flex mb-4">
+                    <span class="btn-xl-square bg-primary text-white me-3 d-flex align-items-center justify-content-center" aria-label="Address">
+                      <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                    <div>
+                      <h4>Address</h4>
+                      <p class="mb-0">Dhaka, Bangladesh</p>
+                    </div>
+                  </div>
 
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-    </body>
+                  <div class="d-flex mb-4">
+                    <a class="btn-xl-square bg-primary text-white me-3 d-flex align-items-center justify-content-center" href="mailto:istiak36@gmail.com" aria-label="Email">
+                      <i class="fas fa-envelope"></i>
+                    </a>
+                    <div>
+                      <h4>Email</h4>
+                      <p class="mb-0"><a href="mailto:istiak36@gmail.com" class="text-body">istiak36@gmail.com</a></p>
+                    </div>
+                  </div>
 
+                  <!-- Phone -->
+                  <div class="d-flex mb-4">
+                    <a class="btn-xl-square bg-primary text-white me-3 d-flex align-items-center justify-content-center" href="tel:+8801720825371" aria-label="Call phone">
+                      <i class="fa fa-phone-alt"></i>
+                    </a>
+                    <div>
+                      <h4>Phone</h4>
+                      <p class="mb-0"><a href="tel:+8801720825371" class="text-body">+880 1720-825-371</a></p>
+                    </div>
+                  </div>
 
+                  <!-- WhatsApp (different number) -->
+                  <div class="d-flex">
+                    <a class="btn-xl-square bg-success text-white me-3 d-flex align-items-center justify-content-center"
+                       href="https://wa.me/8801711110850?text=Hi%20Istiak%2C%20I%27d%20like%20to%20discuss%20a%20project."
+                       target="_blank" rel="noopener" aria-label="WhatsApp">
+                      <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <div>
+                      <h4>WhatsApp</h4>
+                      <p class="mb-0">
+                        <a href="https://wa.me/8801711110850?text=Hi%20Istiak%2C%20I%27d%20like%20to%20discuss%20a%20project."
+                           target="_blank" rel="noopener" class="text-body">+880 1711-110-850</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Form -->
+                <div class="col-xl-7 wow fadeInUp" data-wow-delay="0.3s">
+                  <div>
+                    <form id="contactForm">
+                      <div class="row g-3">
+                        <div class="col-lg-12 col-xl-6">
+                          <div class="form-floating">
+                            <input type="text" class="form-control border-0" id="name" name="name" placeholder="Your Name" required>
+                            <label for="name">Your Name</label>
+                          </div>
+                        </div>
+                        <div class="col-lg-12 col-xl-6">
+                          <div class="form-floating">
+                            <input type="email" class="form-control border-0" id="email" name="email" placeholder="Your Email" required>
+                            <label for="email">Your Email</label>
+                          </div>
+                        </div>
+                        <div class="col-lg-12 col-xl-6">
+                          <div class="form-floating">
+                            <input type="tel" class="form-control border-0" id="phone" name="phone" placeholder="Phone">
+                            <label for="phone">Your Phone</label>
+                          </div>
+                        </div>
+                        <div class="col-lg-12 col-xl-6">
+                          <div class="form-floating">
+                            <input type="text" class="form-control border-0" id="project" name="project" placeholder="Project">
+                            <label for="project">Your Project</label>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-floating">
+                            <input type="text" class="form-control border-0" id="subject" name="subject" placeholder="Subject" required>
+                            <label for="subject">Subject</label>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-floating">
+                            <textarea class="form-control border-0" placeholder="Leave a message here" id="message" name="message" style="height:120px" required></textarea>
+                            <label for="message">Message</label>
+                          </div>
+                        </div>
+
+                        <!-- Honeypot (spam protection) -->
+                        <input type="text" name="_gotcha" style="display:none">
+
+                        <!-- Status messages -->
+                        <div class="col-12">
+                          <div id="formStatus" class="small"></div>
+                        </div>
+
+                        <div class="col-12">
+                          <button id="submitBtn" class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <!-- Map -->
+                <div class="col-12 wow fadeInUp" data-wow-delay="0.5s">
+                  <div class="rounded">
+                    <iframe
+                      class="rounded w-100"
+                      style="height: 400px;"
+                      src="https://maps.google.com/maps?q=Dhaka%2C%20Bangladesh&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                      title="Map">
+                    </iframe>
+                  </div>
+                </div>
+
+              </div><!-- /.row -->
+            </div><!-- /.bg-light -->
+          </div><!-- /.contact-content -->
+        </div><!-- /.col-lg-9 -->
+
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div>
+  <!-- Contact End -->
+
+  <!-- Footer Start -->
+  <div class="container-fluid footer bg-dark border-bottom-0">
+    <div class="container wow fadeIn" data-wow-delay="0.1s">
+      <div class="row g-0">
+        <div class="col-12">
+          <div class="footer-content h-100 pt-6 ps-6 pb-6">
+            <div class="row g-4 align-items-center">
+
+              <!-- Socials -->
+              <div class="col-12 text-center">
+                <div class="d-flex justify-content-center">
+                  <a class="btn btn-light btn-md-square me-3"
+                     href="https://www.facebook.com/IstiakShetu"
+                     target="_blank" rel="noopener" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a class="btn btn-light btn-md-square"
+                     href="https://www.linkedin.com/in/istiak-data-analyst"
+                     target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Copyright -->
+              <div class="col-12 text-center">
+                <span class="text-body">
+                  <i class="fas fa-copyright text-body me-2"></i>
+                  <span id="year"></span>
+                  <a href="#" class="border-bottom text-white">Istiak Alam</a>. All rights reserved.
+                </span>
+              </div>
+
+              <!-- Template credit note -->
+              <!-- If you are using an HTML Codex template without a credit-removal license,
+                   you should keep their credit here per their terms. -->
+              <div class="col-12 text-center text-body">
+                Designed By <a class="border-bottom text-white" href="istiak-alam.github.io" target="_blank" rel="noopener">Istiak Alam</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+  <!-- Dynamic year -->
+  <script>
+    (function () {
+      const y = document.getElementById('year');
+      if (y) y.textContent = new Date().getFullYear();
+    })();
+  </script>
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+
+  <!-- Contact Form Script (Formspree, client-side) -->
+  <script>
+    // Live Formspree endpoint
+    const FORMSPREE_ENDPOINT = "https://formspree.io/f/xwpqgjev";
+
+    const form      = document.getElementById("contactForm");
+    const status    = document.getElementById("formStatus");
+    const submitBtn = document.getElementById("submitBtn");
+
+    if (form) {
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+        status.textContent  = "";
+        submitBtn.disabled  = true;
+        submitBtn.innerText = "Sending...";
+
+        try {
+          const data = new FormData(form);
+          const res  = await fetch(FORMSPREE_ENDPOINT, {
+            method : "POST",
+            headers: { "Accept": "application/json" },
+            body   : data
+          });
+
+          if (res.ok) {
+            status.className   = "small text-success";
+            status.textContent = "Thanks! Your message has been sent.";
+            form.reset();
+          } else {
+            const err = await res.json().catch(() => ({}));
+            status.className   = "small text-danger";
+            status.textContent = (err && err.errors && err.errors[0] && err.errors[0].message) || "Something went wrong. Please try again.";
+          }
+        } catch (err) {
+          status.className   = "small text-danger";
+          status.textContent = "Network error. Please try again.";
+        } finally {
+          submitBtn.disabled  = false;
+          submitBtn.innerText = "Send Message";
+        }
+      });
+    }
+  </script>
+</body>
 </html>
